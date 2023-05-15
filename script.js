@@ -21,6 +21,14 @@ createApp({
         // console.log('is fired');
         this.number ++ ;
       },
-      
+      testonce(){
+        console.log('test once');
+      },
+      printMyname(){
+        console.log('Mohanad');
+      }
     },
 }).mount(".app_root");
+
+
+//events modifires

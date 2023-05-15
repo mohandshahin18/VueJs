@@ -23,7 +23,20 @@
             <button @click="testFunction">Click</button>
             <button v-on:dblclick="testFunction">Double Click</button>
         </div>
+
+        <a :href="link" target="_blank"  @click.prevent>Link</a>
+
+        <form action="" @submit.prevent>
+            <button type="submit">submit form</button>
+        </form>
+
+        <a href="#" @click.once="testonce">test</a>
+
+        <input type="text" @keyup="printMyname" name="" id="">
+        <input type="text" @keyup.enter="printMyname" name="" id="">
     </div>
+
+
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="script.js"></script>
