@@ -10,6 +10,19 @@
     
     <div class="app_root">
         <h2> My Name is {{ name }} and my age is {{ age }}</h2>
+        <h3>{{ sayHi('Evening' , name) }}</h3>
+        <a v-bind:href="link" target="_blank">FTMS</a>
+        <br>
+        <img v-bind:src="img" width="180">
+        <br>
+        <img :src="img" width="180">
+
+        <div class="event">
+            <p>Number is {{ number }}</p>
+            <!-- <button v-on:click="testFunction">Click</button> -->
+            <button @click="testFunction">Click</button>
+            <button v-on:dblclick="testFunction">Double Click</button>
+        </div>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
