@@ -32,8 +32,55 @@
 
         <a href="#" @click.once="testonce">test</a>
 
-        <input type="text" @keyup="printMyname" name="" id="">
-        <input type="text" @keyup.enter="printMyname" name="" id="">
+        <div>
+            <h3>print name</h3>
+            print name in console after write any thing in input
+            <br>
+            <input type="text" @keyup="printMyname" name="" id="">
+            <br>
+            print name in console after click enter
+            <br>
+            <input type="text" @keyup.enter="printMyname" name="" id="">
+        </div>
+
+
+        <div>
+            <h3>change the name</h3>
+
+            <label for="textInp">{{ name }}</label> <br>
+            <!-- <input type="text" @keyup="updateValue" name="textInp" id="textInp"> <br> -->
+            <input type="text" v-model="name" name="textInp" id="textInp"> <br>
+            <label for="textInp2">{{ city }}</label> <br>
+            <input type="text" name="textInp2" id="textInp2">
+
+            <br>
+            <button @click="name = 'Ahmed'"> Change Name</button>
+        </div>
+
+        <div class="lec-9">
+            <h2>Lecture 9</h2>
+            <form action="" @submit.prevent="sendData">
+
+                <div>
+                    <label for="name">Enter your name</label>
+                    <input type="text" v-model="name2" name="name" id="name">
+                </div>
+
+                <div>
+                    <label for="email">Enter your email</label>
+                    <input type="email" v-model="email" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="email">Enter your password</label>
+                    <input type="password" v-model="password" name="password" id="password">
+                </div>
+
+                <button type="submit" >submit</button>
+
+            </form>
+        </div>
+
     </div>
 
 
