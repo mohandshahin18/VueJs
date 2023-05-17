@@ -12,6 +12,8 @@ createApp({
             email: '',
             password: '',
             name2: '',
+            numberOne: 0 ,
+            numberTwo: 0 ,
         };
     },
 
@@ -42,7 +44,26 @@ createApp({
           }
 
           console.log(newUser);
-      }
+      },
+      // numberOneChange(){
+      //   console.log(1);
+      //   return this.numberOne * 2 ;
+      // },
+      // numberTwoChange(){
+      //   console.log(2);
+      //   return this.numberTwo + 10 ;
+      // },
+    },
+
+    computed : {
+      numberOneChange(){
+        console.log(1);
+        return this.numberOne * 2 ;
+      },
+      numberTwoChange(){
+        console.log(2);
+        return this.numberTwo + 10 ;
+      },
     },
 }).mount(".app_root");
 
