@@ -105,6 +105,19 @@
             <p :style="`color : ${myColor}`"> My style binding </p>
         </div>
 
+        <div class="lec-12">
+            <h2>Lecture 12</h2>
+            <h2> My Name is {{ name }} and my age is {{ age }}</h2>
+
+            <p v-show="age<25">His age is younger than 25</p>
+            <p v-if="age<25">His age is younger than 25</p>
+            <p v-else-if="age == 25">His age is equal to 25</p>
+            <p v-else>His age is older than 25</p>
+            <button @click="age++">increace age</button>
+            <button @click="age--">decreace age</button>
+            
+        </div>
+
     </div>
 
 
