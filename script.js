@@ -14,6 +14,8 @@ createApp({
             name2: '',
             numberOne: 0 ,
             numberTwo: 0 ,
+            title : 'title' ,
+            myColor : '',
         };
     },
 
