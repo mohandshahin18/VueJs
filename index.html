@@ -118,6 +118,19 @@
             
         </div>
 
+        <div class="lec-13">
+            <h2>Lecture 13</h2>
+
+            <h5 v-for="(name , i) in students" :key="i">
+                {{ name }}
+            </h5>
+            <h3>Loop of objects</h3>
+            <h5 v-for="student in studentsObject" :key="student.id">
+                <!-- <p v-if="student.id == 1"> {{ student.name }}</p> -->
+                {{ student.name }} {{ student.age }}
+            </h5>
+        </div>
+
     </div>
 
 

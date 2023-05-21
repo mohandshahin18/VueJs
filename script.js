@@ -16,6 +16,24 @@ createApp({
             numberTwo: 0 ,
             title : 'title' ,
             myColor : '',
+            students : ['ahmed' , 'ali','mohanad','sami','sara'],
+            studentsObject : [
+              {
+                name : 'Ahmed',
+                id : 1 ,
+                age : 25 ,
+              } ,
+              {
+                name : 'Mohanad',
+                id : 2 ,
+                age : 29 ,
+              } ,
+              {
+                name : 'Sami',
+                id : 3 ,
+                age : 24 ,
+              } ,
+            ],
         };
     },
 
