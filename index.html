@@ -131,6 +131,19 @@
             </h5>
         </div>
 
+        <div class="lec-14">
+            <h2>Lecture 14</h2>
+            <div class="container">
+                <div class="card" v-for="product in prouducts" :key="product.id">
+                        <h4>Title : {{ product.title }}</h4>
+                        <h5>Description : {{ product.description }}</h5>
+                        <p>Price : {{ product.price }}</p>
+                        <p>Brand : {{ product.brand }}</p>
+                        <hr>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 

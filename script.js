@@ -34,6 +34,36 @@ createApp({
                 age : 24 ,
               } ,
             ],
+            prouducts : [
+              {
+                id : 1 ,
+                title : 'Lizard shose',
+                description : 'This is a very cool shose with a cool color',
+                price : 454 ,
+                brand : 'Adidass',
+              },
+              {
+                id : 2 ,
+                title : 'Girl bag',
+                description : 'This is a very cool girl bag with a cool color',
+                price : 125 ,
+                brand : 'Nike',
+              },
+              {
+                id : 3 ,
+                title : 'Lenovo Laptop',
+                description : 'This is a very cool Laptop with many techinqe',
+                price : 899 ,
+                brand : 'Lenovo',
+              },
+              {
+                id : 4 ,
+                title : 'Apple watch',
+                description : 'This is a very cool watch with a cool color',
+                price : 499 ,
+                brand : 'Apple',
+              },
+            ]
         };
     },
 
