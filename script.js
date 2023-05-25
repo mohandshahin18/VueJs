@@ -1,6 +1,6 @@
 const  { createApp } = Vue;
 
-createApp({
+const vue_1 = createApp({
     data(){
         return {
             name: 'Mohanad' ,
@@ -130,3 +130,18 @@ createApp({
 
 
 //events modifires
+
+
+const vue_2 = createApp({
+  data(){
+    return{
+      name : 'Mohanad Student' ,
+      students : ['Ajmed','Sami' ,'Mohanad','Ali']
+    }
+  },
+  methods : {
+    increaseAge(){
+      vue_1.age ++ ; 
+    }
+  }
+}).mount("#app_root_2");

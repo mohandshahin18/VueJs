@@ -13,7 +13,9 @@
 .green{
     color: green;
 }
-
+.products{
+    text-align: center;
+}
 
 .container{
     display: flex;
@@ -48,4 +50,9 @@
     -ms-border-radius:50%;
     -o-border-radius:50%;
     
+}
+
+
+.students{
+    text-align: center;
 }

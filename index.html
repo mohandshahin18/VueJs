@@ -133,6 +133,7 @@
 
         <div class="lec-14">
             <h2>Lecture 14</h2>
+            <h3 class="products">Products</h3>
             <div class="container">
                 <div class="card" v-for="product in prouducts" :key="product.id">
                     <img :src="product.img" alt="">
@@ -149,12 +150,20 @@
         </div>
 
 
-       
-
-
     </div>
 
 
+    <div id="app_root_2" class="Students">
+        <h2 class="students">Students</h2>
+            <p>the student name is : {{ name }}</p>
+
+            <h4>ALl of students</h4> 
+            <h6 v-for="(student , i) in students" :key="i">
+                {{ student }}
+            </h6>
+            
+            <button @click="increaseAge()"> Increase Age</button>
+   </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="script.js"></script>
