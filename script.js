@@ -142,6 +142,9 @@ const vue_2 = createApp({
   methods : {
     increaseAge(){
       vue_1.age ++ ; 
-    }
+    },
+    checkRefs (){
+      console.log(this.$refs);
+    },
   }
 }).mount("#app_root_2");

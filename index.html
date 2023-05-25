@@ -154,7 +154,10 @@
 
 
     <div id="app_root_2" class="Students">
-        <h2 class="students">Students</h2>
+        <div class="lec-16">
+            <h2 class="students">Students</h2>
+            <h2>Lecture 16</h2>
+
             <p>the student name is : {{ name }}</p>
 
             <h4>ALl of students</h4> 
@@ -163,6 +166,15 @@
             </h6>
             
             <button @click="increaseAge()"> Increase Age</button>
+        </div>
+
+        <div class="lec-17">
+            <h2>Lecture 17</h2>
+
+            <input type="text" ref="myInput">
+            <h2 ref="myTitle">Hello</h2>
+            <button @click="checkRefs()">Check Refs</button>
+        </div>
    </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
