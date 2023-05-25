@@ -135,14 +135,22 @@
             <h2>Lecture 14</h2>
             <div class="container">
                 <div class="card" v-for="product in prouducts" :key="product.id">
-                        <h4>Title : {{ product.title }}</h4>
-                        <h5>Description : {{ product.description }}</h5>
-                        <p>Price : {{ product.price }}</p>
+                    <img :src="product.img" alt="">
+                        <h4>{{ product.title }}</h4>
+                        <h5>{{ product.description }}</h5>
+                       
                         <p>Brand : {{ product.brand }}</p>
-                        <hr>
+                       <div class="colors">
+                        <span v-for="color in product.colors" :style="`background : ${color} ; border:1px solid ${color};`"></span>
+                       </div>
+                       <p>Price : {{ product.price }}</p>
                 </div>
             </div>
         </div>
+
+
+       
+
 
     </div>
 

@@ -41,6 +41,8 @@ createApp({
                 description : 'This is a very cool shose with a cool color',
                 price : 454 ,
                 brand : 'Adidass',
+                colors: ['red','green','blue','black'],
+                img : 'images/lizardShoes.jpg'
               },
               {
                 id : 2 ,
@@ -48,6 +50,9 @@ createApp({
                 description : 'This is a very cool girl bag with a cool color',
                 price : 125 ,
                 brand : 'Nike',
+                colors: ['red','pink','blue','green'],
+                img : 'images/girlBag.jpg'
+
               },
               {
                 id : 3 ,
@@ -55,6 +60,9 @@ createApp({
                 description : 'This is a very cool Laptop with many techinqe',
                 price : 899 ,
                 brand : 'Lenovo',
+                colors: ['yellow','green','blue','red'],
+                img : 'images/lenovoLaptop.jpg'
+
               },
               {
                 id : 4 ,
@@ -62,6 +70,9 @@ createApp({
                 description : 'This is a very cool watch with a cool color',
                 price : 499 ,
                 brand : 'Apple',
+                colors: ['blue','black','yellow','green'],
+                img : 'images/appleWatch.jpg'
+
               },
             ]
         };

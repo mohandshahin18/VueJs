@@ -13,3 +13,39 @@
 .green{
     color: green;
 }
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+
+.card img{
+    width: auto;
+    height: 125px;
+    object-fit: cover;
+
+}
+
+.colors{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.colors span{
+    width: 25px;
+    height: 25px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    
+}
