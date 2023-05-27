@@ -148,3 +148,31 @@ const vue_2 = createApp({
     },
   }
 }).mount("#app_root_2");
+
+
+// Components Lec 18
+
+const my_component = {
+    template : `<h2>Hello From my first component</h2>
+                <h3>My name is {{name}}</h3>
+                <h3>My Age is {{age}}</h3>
+              `,
+
+    data(){
+      return{
+          name : "Ahmed",
+          age : 23 ,
+      };
+    }
+};
+
+const vue_3 = createApp({
+  data(){
+    return{
+
+    };
+  },
+  components : {
+    my_component ,
+  },
+}).mount('#app_root_3');
